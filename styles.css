@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333; 
+    color: white; 
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #E2B2E5;
+}
+h1 {
+    color:#1A1A3D
+}
+
+nav a {
+    margin: 0 40px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: #E2B2E5
+}
+
+#cats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.cat {
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+
+.cat:nth-child(-n+4) {
+    margin-bottom: 40px; 
+}
+
+.cat img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.cat h3 {
+    position: absolute;
+    top: -45px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFB300; 
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.cat p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transform: translateY(10px);
+}
+
+
+.cat:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+#dogs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.dog {
+    position: relative;
+    width: 150px;
+    text-align: center;
+}
+
+
+.dog:nth-child(-n+4) {
+    margin-bottom: 40px; 
+}
+
+.dog img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+.dog h3 {
+    position: absolute;
+    top: -45px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #FFB300; 
+    text-shadow: 1px 1px 2px black;
+}
+
+
+.dog p {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transform: translateY(10px);
+}
+
+.dog:hover p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+main p {
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+
+button {
+    background-color: #E2B2E5;
+    color: #1A1A3D; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFB300;
+}
