@@ -7,11 +7,25 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background-color: #E2B2E5;
 }
 h1 {
     color:#1A1A3D
+}
+.kaart,.kontaktvorm {
+    float:left;
+    width: 50%;
+    height: 100%;
+}
+.tagasiside {
+    text-align: center;
+    justify-content: center;
+}
+input,label,textarea {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
 nav a {
@@ -27,15 +41,20 @@ h2 {
     color: #E2B2E5
 }
 
-#cats {
+#cats, #viited {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-items: center;
     margin-bottom: 20px;
 }
+#viited {
+    float:inline-start;
+    grid-template-columns: repeat(2, 1fr);
+    margin-inline-start:37.3%;
+}
 
-.cat {
+.cat, .viide {
     position: relative;
     width: 150px;
     text-align: center;
@@ -46,7 +65,7 @@ h2 {
     margin-bottom: 40px; 
 }
 
-.cat img {
+.cat img, .viide img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -55,7 +74,7 @@ h2 {
 }
 
 
-.cat h3 {
+.cat h3, .viide h3 {
     position: absolute;
     top: -45px; 
     left: 0;
@@ -64,7 +83,9 @@ h2 {
     color: #FFB300; 
     text-shadow: 1px 1px 2px black;
 }
-
+.viide h3 {
+    top: 45px;
+}
 
 .cat p {
     opacity: 0;
